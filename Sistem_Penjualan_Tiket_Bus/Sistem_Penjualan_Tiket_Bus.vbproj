@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7A87513F-A878-403E-9AED-CFF2102A61F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Sistem_Penjualan_Tiket_Bus.My.MyApplication</StartupObject>
+    <RootNamespace>Sistem_Penjualan_Tiket_Bus</RootNamespace>
+    <AssemblyName>Sistem_Penjualan_Tiket_Bus</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Sistem_Penjualan_Tiket_Bus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Sistem_Penjualan_Tiket_Bus.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClassPenumpang.vb" />
+    <Compile Include="ClassRute.vb" />
+    <Compile Include="FormEditBus.Designer.vb">
+      <DependentUpon>FormEditBus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditBus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPenumpang.Designer.vb">
+      <DependentUpon>FormEditPenumpang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPenumpang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditRute.Designer.vb">
+      <DependentUpon>FormEditRute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditRute.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHapusBus.Designer.vb">
+      <DependentUpon>FormHapusBus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHapusBus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHapusPenumpang.Designer.vb">
+      <DependentUpon>FormHapusPenumpang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHapusPenumpang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHapusRute.Designer.vb">
+      <DependentUpon>FormHapusRute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormHapusRute.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahBus.Designer.vb">
+      <DependentUpon>FormTambahBus.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahBus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahPenumpang.Designer.vb">
+      <DependentUpon>FormTambahPenumpang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahPenumpang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahRute.Designer.vb">
+      <DependentUpon>FormTambahRute.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahRute.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JenisBus.vb" />
+    <Compile Include="loginvb.Designer.vb">
+      <DependentUpon>loginvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="loginvb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="registration.Designer.vb">
+      <DependentUpon>registration.vb</DependentUpon>
+    </Compile>
+    <Compile Include="registration.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormEditBus.resx">
+      <DependentUpon>FormEditBus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPenumpang.resx">
+      <DependentUpon>FormEditPenumpang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditRute.resx">
+      <DependentUpon>FormEditRute.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHapusBus.resx">
+      <DependentUpon>FormHapusBus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHapusPenumpang.resx">
+      <DependentUpon>FormHapusPenumpang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHapusRute.resx">
+      <DependentUpon>FormHapusRute.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahBus.resx">
+      <DependentUpon>FormTambahBus.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahPenumpang.resx">
+      <DependentUpon>FormTambahPenumpang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahRute.resx">
+      <DependentUpon>FormTambahRute.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginvb.resx">
+      <DependentUpon>loginvb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registration.resx">
+      <DependentUpon>registration.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
